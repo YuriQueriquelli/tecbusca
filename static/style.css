@@ -1,6 +1,18 @@
 .container-bg-red {
     background: #AC0000;
 }
+
 .container-bg-grey {
     background: #D4D4D4;
 }
+
+.nav-item {
+    font-size: 18px;
+}
+
+.hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }

@@ -12,5 +12,9 @@ db=SQLAlchemy(app)
 def index():
     return render_template('index.html')
 
+@app.route('/vagas', methods=['GET', 'POST'])
+def vagas():
+    return render_template('vagas.html')
+
 if __name__ == '__main__':
     app.run(port='9090', debug=True)

@@ -34,7 +34,7 @@ def index():
 def ads(page):
     page = page
     itens = 10
-    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '1').paginate(page,itens,error_out=False)
+    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '1').order_by(Vaga_geral.geral_data.desc()).paginate(page,itens,error_out=False)
     return render_template('ads.html', vagas=vagas)
 
 
@@ -44,7 +44,7 @@ def ads(page):
 def comex(page):
     page = page
     itens = 10
-    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '2').paginate(page,itens,error_out=False)
+    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '2').order_by(Vaga_geral.geral_data.desc()).paginate(page,itens,error_out=False)
     return render_template('comex.html', vagas=vagas)
 
 
@@ -54,7 +54,7 @@ def comex(page):
 def ge(page):
     page = page
     itens = 10
-    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '3').paginate(page,itens,error_out=False)
+    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '3').order_by(Vaga_geral.geral_data.desc()).paginate(page,itens,error_out=False)
     return render_template('ge.html', vagas=vagas)
 
 
@@ -64,7 +64,7 @@ def ge(page):
 def gs(page):
     page = page
     itens = 10
-    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '4').paginate(page,itens,error_out=False)
+    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '4').order_by(Vaga_geral.geral_data.desc()).paginate(page,itens,error_out=False)
     return render_template('gs.html', vagas=vagas)
 
 
@@ -74,7 +74,7 @@ def gs(page):
 def log(page):
     page = page
     itens = 10
-    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '5').paginate(page,itens,error_out=False)
+    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '5').order_by(Vaga_geral.geral_data.desc()).paginate(page,itens,error_out=False)
     return render_template('log.html', vagas=vagas)
 
 
@@ -84,7 +84,7 @@ def log(page):
 def redes(page):
     page = page
     itens = 10
-    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '6').paginate(page,itens,error_out=False)
+    vagas = Vaga_geral.query.filter(Vaga_geral.curso_id == '6').order_by(Vaga_geral.geral_data.desc()).paginate(page,itens,error_out=False)
     return render_template('redes.html', vagas=vagas)
 
 
@@ -94,7 +94,7 @@ def redes(page):
 def todos(page):
     page = page
     itens = 10
-    vagas = Vaga_geral.query.paginate(page,itens,error_out=False)
+    vagas = Vaga_geral.query.order_by(Vaga_geral.geral_data.desc()).paginate(page,itens,error_out=False)
     return render_template('todos.html', vagas=vagas)
 
 if __name__ == '__main__':

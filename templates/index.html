@@ -22,19 +22,19 @@
                           <a class="nav-link link-light" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link link-light" href="#">Todas as vagas</a>
+                          <a class="nav-link link-light" href="/todos">Todas as vagas</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link link-light" href="#">Como funciona?</a>
+                          <a class="nav-link link-light" href="#how-it-works">Como funciona?</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link link-light">Contato</a>
+                          <a class="nav-link link-light" href="#contato">Contato</a>
                         </li>
                       </ul>
                 </div>
                 <div class="col-sm-8 col-md-8 col-lg-2 mt-2">
                     <a class="navbar-brand" href="#">
-                        <img src="../static/logo.png" alt="TecBusca">
+                        <img src="../static/logo.png" alt="TecBusca" class="mx-auto img-fluid">
                       </a>
                 </div>
             </div>
@@ -42,36 +42,39 @@
     </div>
     <!-- END OF MENU BAR-->
     <div class="container-bg-grey">
-        <div class="container mx-auto pt-5">
+        <div class="container mx-auto pt-5 pb-3">
             <h3>
                 <p>Em qual curso da <b>Fatec</b> você esta procurando uma oportunidade?</p>
             </h3>
-            <form>
-                <div class="form-group pt-3">
-                    <select class="form-control form-control-lg">
-                        <option>Análise e Desenvolvimento de Sistemas</option>
-                        <option>Comércio Exterior</option>
-                        <option>Gestão Empresarial</option>
-                        <option>Gestão de Serviços</option>
-                        <option>Logística Aeroportuária</option>
-                        <option>Redes de Computadores</option>
-                        <option>Indefinido</option>
-                    </select>
-                    <h4 class="pt-4 pb-4">Quais seus pontos fortes?</h4>
-                    <input type="text" class="form-control form-control-lg" id="categoria"  placeholder="Exemplo: Python">
-                    <div class="row">
-                        <div class="col text-center pt-4 pb-4">
-                            <button type="submit" class="btn btn-secondary btn-lg">Pesquisar</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+            <div class="list-group pt-3">
+                <a href="/ads" class="list-group-item list-group-item-action list-group-item-light">
+                    Análise e Desenvolvimento de Sistemas
+                </a>
+                <a href="/comex" class="list-group-item list-group-item-action list-group-item-light">
+                    Comércio Exterior
+                </a>
+                <a href="/ge" class="list-group-item list-group-item-action list-group-item-light">
+                    Gestão Empresarial
+                </a>
+                <a href="/gs" class="list-group-item list-group-item-action list-group-item-light">
+                    Gestão de Serviços
+                </a>
+                <a href="/log" class="list-group-item list-group-item-action list-group-item-light">
+                    Logística Aeroportuária
+                </a>
+                <a href="/redes" class="list-group-item list-group-item-action list-group-item-light">
+                    Redes de Computadores
+                </a>
+                <a href="/todos" class="list-group-item list-group-item-action list-group-item-light">
+                    Ver todos
+                </a>
+              </div>
         </div>
     </div>
     <div class="container-bg-red">
         <blank>a</blank>
     </div>
-    <div class="container text-center pt-5">
+    <div class="container text-center pt-5" id="how-it-works">
         <h4>
             <p>
                 Com o <b>TecBusca</b> você encontra a melhor vaga de acordo com o currículo do curso!
@@ -99,7 +102,7 @@
               </div>
         </h6>
     </div>
-    <div class="container-bg-red text-center">
+    <div class="container-bg-red text-center" id="contato">
         <div class="row pt-3">
             <p style="color: whitesmoke;">
                 Esse site faz parte do projeto de conclusão de curso de Análise e Desenvolvimento de Sistemas da Fatec Indaiatuba.
